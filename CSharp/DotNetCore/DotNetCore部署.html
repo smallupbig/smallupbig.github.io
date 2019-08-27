@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>将 .Net Core 部署到服务器 | 跳一跳的猪的博客</title>
+    <meta name="description" content="Hello World">
+    <link rel="icon" href="/favicon.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.0822f0c7.css" as="style"><link rel="preload" href="/assets/js/app.95515c58.js" as="script"><link rel="preload" href="/assets/js/2.1e63c646.js" as="script"><link rel="preload" href="/assets/js/5.966df546.js" as="script"><link rel="prefetch" href="/assets/js/10.63c10e9a.js"><link rel="prefetch" href="/assets/js/11.7d9955f5.js"><link rel="prefetch" href="/assets/js/12.f40b8dc7.js"><link rel="prefetch" href="/assets/js/13.bd10cedd.js"><link rel="prefetch" href="/assets/js/14.ca04ea7b.js"><link rel="prefetch" href="/assets/js/15.057b383c.js"><link rel="prefetch" href="/assets/js/16.17f85a0e.js"><link rel="prefetch" href="/assets/js/17.00380992.js"><link rel="prefetch" href="/assets/js/18.02ac9a73.js"><link rel="prefetch" href="/assets/js/19.49a49d79.js"><link rel="prefetch" href="/assets/js/20.8c5d19b0.js"><link rel="prefetch" href="/assets/js/21.23feb2ff.js"><link rel="prefetch" href="/assets/js/22.7943b80e.js"><link rel="prefetch" href="/assets/js/23.19abfcba.js"><link rel="prefetch" href="/assets/js/24.a8b7c3a2.js"><link rel="prefetch" href="/assets/js/25.245c92f0.js"><link rel="prefetch" href="/assets/js/26.5f3536b1.js"><link rel="prefetch" href="/assets/js/27.81ed09c2.js"><link rel="prefetch" href="/assets/js/28.eac509c8.js"><link rel="prefetch" href="/assets/js/29.6a3135ea.js"><link rel="prefetch" href="/assets/js/3.f173e7b6.js"><link rel="prefetch" href="/assets/js/30.9d52e7b2.js"><link rel="prefetch" href="/assets/js/31.4ad32a16.js"><link rel="prefetch" href="/assets/js/32.a8037ea1.js"><link rel="prefetch" href="/assets/js/33.b2e21ebf.js"><link rel="prefetch" href="/assets/js/34.fdfe7603.js"><link rel="prefetch" href="/assets/js/35.3466d40b.js"><link rel="prefetch" href="/assets/js/36.8cb79e41.js"><link rel="prefetch" href="/assets/js/37.18705617.js"><link rel="prefetch" href="/assets/js/38.f76854ed.js"><link rel="prefetch" href="/assets/js/39.989f5c0b.js"><link rel="prefetch" href="/assets/js/4.bb9dbcd4.js"><link rel="prefetch" href="/assets/js/40.b2a9a658.js"><link rel="prefetch" href="/assets/js/6.f9219fb0.js"><link rel="prefetch" href="/assets/js/7.f7f0e67b.js"><link rel="prefetch" href="/assets/js/8.11a2bc7e.js"><link rel="prefetch" href="/assets/js/9.031d86af.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.0822f0c7.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">跳一跳的猪的博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">C</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/C/基础/" class="nav-link">基础</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">CSharp</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/CSharp/DotNetCore/" class="nav-link router-link-active">DotNetCore</a></li><li class="dropdown-item"><!----> <a href="/CSharp/基础/" class="nav-link">基础</a></li><li class="dropdown-item"><!----> <a href="/CSharp/练习/" class="nav-link">练习</a></li></ul></div></div><div class="nav-item"><a href="/JS/" class="nav-link">JS</a></div><div class="nav-item"><a href="/Linux/" class="nav-link">Linux</a></div><div class="nav-item"><a href="/MySql/" class="nav-link">MySql</a></div><div class="nav-item"><a href="/Python/" class="nav-link">Python</a></div><div class="nav-item"><a href="/其他/" class="nav-link">其他</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">C</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/C/基础/" class="nav-link">基础</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">CSharp</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/CSharp/DotNetCore/" class="nav-link router-link-active">DotNetCore</a></li><li class="dropdown-item"><!----> <a href="/CSharp/基础/" class="nav-link">基础</a></li><li class="dropdown-item"><!----> <a href="/CSharp/练习/" class="nav-link">练习</a></li></ul></div></div><div class="nav-item"><a href="/JS/" class="nav-link">JS</a></div><div class="nav-item"><a href="/Linux/" class="nav-link">Linux</a></div><div class="nav-item"><a href="/MySql/" class="nav-link">MySql</a></div><div class="nav-item"><a href="/Python/" class="nav-link">Python</a></div><div class="nav-item"><a href="/其他/" class="nav-link">其他</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>DotNetCore</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/CSharp/DotNetCore/" class="sidebar-link">前言</a></li><li><a href="/CSharp/DotNetCore/DotNetCore部署.html" class="active sidebar-link">将 .Net Core 部署到服务器</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/CSharp/DotNetCore/DotNetCore部署.html#环境" class="sidebar-link">环境</a></li><li class="sidebar-sub-header"><a href="/CSharp/DotNetCore/DotNetCore部署.html#安装-net-core-sdk" class="sidebar-link">安装 .Net Core SDK</a></li><li class="sidebar-sub-header"><a href="/CSharp/DotNetCore/DotNetCore部署.html#守护进程-supervisor" class="sidebar-link">守护进程 Supervisor</a></li><li class="sidebar-sub-header"><a href="/CSharp/DotNetCore/DotNetCore部署.html#nginx" class="sidebar-link">Nginx</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="将-net-core-部署到服务器"><a href="#将-net-core-部署到服务器" aria-hidden="true" class="header-anchor">#</a> 将 .Net Core 部署到服务器</h1> <h2 id="环境"><a href="#环境" aria-hidden="true" class="header-anchor">#</a> 环境</h2> <ol><li>Linux 系统：Centos 7</li></ol> <h2 id="安装-net-core-sdk"><a href="#安装-net-core-sdk" aria-hidden="true" class="header-anchor">#</a> 安装 .Net Core SDK</h2> <p><a href="https://dotnet.microsoft.com/download" target="_blank">官方地址</a></p> <p>使用命令行测试是否成功执行</p> <div class="language-Linux extra-class"><pre class="language-text"><code>donnet 项目名.dll
+</code></pre></div><h2 id="守护进程-supervisor"><a href="#守护进程-supervisor" aria-hidden="true" class="header-anchor">#</a> 守护进程 Supervisor</h2> <p>当我们关闭远程连接时，控制台窗口也随之关闭，为了让我们发布的项目能一直运行，安装 Supervisor 来守护我们的进程</p> <h3 id="安装-supervisor"><a href="#安装-supervisor" aria-hidden="true" class="header-anchor">#</a> 安装 Supervisor</h3> <div class="language-Linux extra-class"><pre class="language-text"><code>yum install python-setuptools
+easy_install supervisor
+</code></pre></div><h3 id="配置"><a href="#配置" aria-hidden="true" class="header-anchor">#</a> 配置</h3> <ul><li>创建配置文件</li></ul> <div class="language-Linux extra-class"><pre class="language-text"><code>mkdir /etc/supervisor
+
+echo_supervisord_conf &gt; /etc/supervisor/supervisord.conf
+</code></pre></div><ul><li>修改 supervisord.conf 文件，在文件最后面修改为如下</li></ul> <div class="language-text extra-class"><pre class="language-text"><code>[include]
+files = /etc/supervisor/conf.d/*.conf
+</code></pre></div><ul><li>创建对项目的守护</li></ul> <p>在 /etc/supervisor/conf.d 下创建文件 MyPlat.conf</p> <div class="language-conf extra-class"><pre class="language-text"><code>[program:MyPlat]
+command=dotnet MyPlat.dll
+directory=/root/web/MyPlat/
+autorestart=true ;是否自动重启
+stderr_logfile=/var/log/supervisord/web/MyPlat.err.log ;文件目录记得创建，不然会报错
+stdout_logfile=/var/log/supervisord/web/MyPlat.out.log
+environment=ASPNETCORE_ENVIRONMENT=Production ;进程环境变量
+user=root
+stopsignal=INT
+</code></pre></div><ul><li>启动 supervisor 配置文件</li></ul> <div class="language-Linux extra-class"><pre class="language-text"><code>supervisord -c /etc/supervisor/supervisord.conf
+</code></pre></div><ul><li>查看进程</li></ul> <p>如果存在 donnet MyPlat.dll,则表示启动成功</p> <div class="language-Linux extra-class"><pre class="language-text"><code>ps -ef | grep MyPlat
+</code></pre></div><ul><li>配置 supervisor 开机启动</li></ul> <p>创建文件 supervisord.service，</p> <p>拷贝到 /usr/lib/systemd/system/supervisord.service，</p> <p>执行命令 systemctl enable supervisord</p> <p>执行命令：systemctl is-enabled supervisord #来验证是否为开机启动</p> <div class="language-service extra-class"><pre class="language-text"><code># dservice for systemd (CentOS 7.0+)
+# by ET-CS (https://github.com/ET-CS)
+[Unit]
+Description=Supervisor daemon
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/supervisord -c /etc/supervisor/supervisord.conf
+ExecStop=/usr/bin/supervisorctl shutdown
+ExecReload=/usr/bin/supervisorctl reload
+KillMode=process
+Restart=on-failure
+RestartSec=42s
+
+[Install]
+WantedBy=multi-user.target
+</code></pre></div><h3 id="常用命令"><a href="#常用命令" aria-hidden="true" class="header-anchor">#</a> 常用命令</h3> <ul><li>重启配置文件</li></ul> <div class="language-Linux extra-class"><pre class="language-text"><code>supervisorctl reload
+</code></pre></div><h2 id="nginx"><a href="#nginx" aria-hidden="true" class="header-anchor">#</a> Nginx</h2> <p>当我们部署多个项目的时候，不可能部署一个项目，服务器便要开启一个端口，这时候安装 Nginx 来负责 80 端口的监控，然后负责对多个项目的分发。</p> <h3 id="安装-nginx"><a href="#安装-nginx" aria-hidden="true" class="header-anchor">#</a> 安装 Nginx</h3> <div class="language-Linux extra-class"><pre class="language-text"><code>curl -o  nginx.rpm http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm
+rpm -ivh nginx.rpm
+yum install nginx
+</code></pre></div><h3 id="配置对项目的转发"><a href="#配置对项目的转发" aria-hidden="true" class="header-anchor">#</a> 配置对项目的转发</h3> <p>将 /etc/nginx/conf.d/default.conf 的内容替换如下，然后重启 Nginx</p> <div class="language-conf extra-class"><pre class="language-text"><code>server {
+    listen       80;
+    server_name  www.baidu.com ;你的网站地址
+
+    location / {
+        proxy_pass http://localhost:8080/ ;本地访问地址
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection keep-alive;
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+        proxy_set_header X-Real-IP $remote_addr;
+    }
+}
+</code></pre></div><h3 id="nginx-常用命令"><a href="#nginx-常用命令" aria-hidden="true" class="header-anchor">#</a> Nginx 常用命令</h3> <ul><li>启动</li></ul> <div class="language-Linux extra-class"><pre class="language-text"><code>systemctl start nginx
+</code></pre></div><ul><li>开机启动</li></ul> <div class="language-Linux extra-class"><pre class="language-text"><code>systemctl enable nginx
+</code></pre></div><ul><li>重启配置</li></ul> <div class="language-Linux extra-class"><pre class="language-text"><code>nginx -s reload
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/CSharp/DotNetCore/" class="prev router-link-active">
+          前言
+        </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.95515c58.js" defer></script><script src="/assets/js/2.1e63c646.js" defer></script><script src="/assets/js/5.966df546.js" defer></script>
+  </body>
+</html>
